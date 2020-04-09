@@ -3,10 +3,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <style>
-    footer{
+    header{
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+      background:cornflowerblue;
+      color: white;
       text-align: center;
       font-size: 2em;
-      margin: 1em;
+      z-index: 100;
     }
     i{
       padding-right: 5px;
@@ -15,27 +20,29 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
       border: 0;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      border-top: 1px solid rgba(0, 0, 0, 0.3);
     }
     .colHeader{
       text-align: center;
       padding: 0.5em;
       font-size: larger;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
     .colContent{
       font-weight: 200;
       text-align: center;
       padding: 0.5em;
       font-size: large;
+      border-right: 1px solid rgba(0, 0, 0, 0.3);
     }
   </style>
 </head>
-<footer>
+<header>
   <div>
-    <span>Печать на дому</span>
+    Печать с доставкой
   </div>
-</footer>
-<body style="background: transparent; margin: 0; padding: 0;">
+</header>
+<body>
   <div class="container-fluid">
     <div class="row">
       <div class="col colHeader">Цветная</div>
@@ -43,9 +50,9 @@
       <div class="col colHeader">Фото</div>
     </div>
     <div class="row">
-      <div class="col colHeader">1 прогон/A4 - от 2 руб.</div>
-      <div class="col colHeader">1 прогон/A4 - 0.70 коп.</div>
-      <div class="col colHeader">10 х 15 - 7 руб.</div>
+      <div class="col colContent">1 прогон/A4 - от 2 руб.</div>
+      <div class="col colContent">1 прогон/A4 - 0.70 коп.</div>
+      <div class="col colContent">10 х 15 - 7 руб.</div>
     </div>
     <hr/>
     <div>
